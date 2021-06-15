@@ -5,7 +5,7 @@
 #    pip-compile --output-file=requirements/requirements.txt requirements/requirements.in
 #
 aiohttp==3.5.4
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 alabaster==0.7.12
     # via sphinx
 amqp==1.4.9
@@ -14,11 +14,11 @@ ansible-builder==0.5.1
     # via galaxy-importer
 ansible-lint==4.2.0
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   galaxy-importer
 ansible==2.9.7
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   ansible-lint
     #   galaxy-importer
 anyjson==0.3.3
@@ -35,11 +35,11 @@ billiard==3.3.0.23
     # via celery
 bleach-whitelist==0.0.10
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   galaxy-importer
 bleach==3.1.3
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   galaxy-importer
 boto3==1.9.107
     # via django-storages
@@ -49,7 +49,7 @@ botocore==1.12.107
     #   s3transfer
 celery==3.1.24
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   django-celery
 certifi==2018.11.29
     # via requests
@@ -81,26 +81,26 @@ defusedxml==0.5.0
 deprecated==1.2.4
     # via pygithub
 dj-database-url==0.5.0
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 django-allauth==0.43.0
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 django-bootstrap-form==3.4
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 django-celery==3.2.2
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 django-filter==2.0.0
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   pulpcore
 django-log-request-id==1.3.2
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 django-prometheus==1.0.15
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 django-storages[boto3]==1.7.1
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 django==2.2.11
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   django-allauth
     #   django-bootstrap-form
     #   django-celery
@@ -114,7 +114,7 @@ djangorestframework-queryfields==1.0.0
     # via pulpcore
 djangorestframework==3.7.7
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   drf-nested-routers
     #   drf-yasg
     #   pulpcore
@@ -133,19 +133,16 @@ entrypoints==0.3
     # via flake8
 flake8==3.7.9
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   galaxy-importer
 galaxy-importer==0.2.14
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 gunicorn==19.7.1
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   pulpcore
-idna-ssl==1.1.0
-    # via aiohttp
 idna==2.7
     # via
-    #   idna-ssl
     #   requests
     #   yarl
 imagesize==1.1.0
@@ -153,7 +150,7 @@ imagesize==1.1.0
 inflection==0.3.1
     # via drf-yasg
 influxdb==5.2.1
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 itypes==1.1.0
     # via coreapi
 jinja2==2.10.1
@@ -166,17 +163,17 @@ jmespath==0.9.4
     #   boto3
     #   botocore
 jog==0.1.1
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 kombu==3.0.37
     # via celery
 markdown==3.2.1
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   galaxy-importer
 markupsafe==1.1.0
     # via jinja2
 marshmallow==2.16.3
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 mccabe==0.6.1
     # via flake8
 multidict==4.5.2
@@ -191,14 +188,14 @@ pathspec==0.5.9
     # via yamllint
 prometheus-client==0.5.0
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   django-prometheus
 psycopg2-binary==2.7.6.1
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   pulpcore
 pulpcore==3.0.0b21
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 pycodestyle==2.5.0
     # via flake8
 pycparser==2.19
@@ -206,22 +203,22 @@ pycparser==2.19
 pyflakes==2.1.0
     # via flake8
 pygithub==1.43.3
-    # via -r requirements/requirements.in
-pygments==2.3.0
+    # via -r requirements.in
+pygments==2.7.4
     # via sphinx
 pyjwt[crypto]==1.7.1
     # via
     #   django-allauth
     #   pygithub
 pyopenssl==18.0.0
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 pyparsing==2.3.0
     # via packaging
 python-box==3.2.3
     # via dynaconf
 python-dateutil==2.7.5
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   botocore
     #   influxdb
 python-dotenv==0.10.1
@@ -230,14 +227,14 @@ python3-openid==3.1.0
     # via django-allauth
 pytz==2018.7
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   babel
     #   celery
     #   django
     #   influxdb
 pyyaml==5.3.1
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   ansible
     #   ansible-builder
     #   ansible-lint
@@ -248,11 +245,11 @@ redis==3.0.1
     # via rq
 requests-oauthlib==1.0.0
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   django-allauth
 requests==2.23.0
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   coreapi
     #   django-allauth
     #   galaxy-importer
@@ -265,7 +262,7 @@ requirements-parser==0.2.0
 rq==0.13.0
     # via pulpcore
 rst2html5-tools==0.5.3
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 ruamel.yaml==0.15.85
     # via
     #   ansible-lint
@@ -274,7 +271,7 @@ s3transfer==0.2.0
     # via boto3
 semantic-version==2.8.4
     # via
-    #   -r requirements/requirements.in
+    #   -r requirements.in
     #   galaxy-importer
 six==1.12.0
     # via
@@ -290,15 +287,13 @@ six==1.12.0
 snowballstemmer==1.2.1
     # via sphinx
 sphinx==1.7.9
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 sphinxcontrib-websupport==1.1.0
     # via sphinx
 sqlparse==0.3.1
     # via django
 toml==0.10.0
     # via dynaconf
-typing-extensions==3.7.4.2
-    # via aiohttp
 uritemplate==3.0.0
     # via
     #   coreapi
@@ -314,7 +309,7 @@ whitenoise==4.1.2
 wrapt==1.10.11
     # via deprecated
 yamllint==1.13.0
-    # via -r requirements/requirements.in
+    # via -r requirements.in
 yarl==1.3.0
     # via aiohttp
 
